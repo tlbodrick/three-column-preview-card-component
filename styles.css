@@ -32,6 +32,7 @@ body {
     font-size: 15px;
     font-family: 'Lexend Deca',sans-serif;
     color: var(--transparent-white);
+    background-color: var(--very-light-gray);
 }
 
 
@@ -43,6 +44,7 @@ p {
 
 .main-component {
     margin: 0 1.563em;
+    height: 100vh;
 }
 
 .sedans {
@@ -62,7 +64,7 @@ p {
 h2 {
     font-family: 'Big Shoulders Display', sans-serif;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-size: 2em;
 }
 
@@ -94,12 +96,15 @@ button {
     color: var(--very-dark-cyan);
 }
 
+
 @media (min-width: 750px) {
     .main-component {
+        margin: auto;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        max-width: 920px;
     }
 
 
@@ -109,5 +114,9 @@ button {
 
     .luxury {
         border-radius: 0 10px 10px 0;
+    }
+
+    p {
+        margin-bottom: 80px;
     }
 }
